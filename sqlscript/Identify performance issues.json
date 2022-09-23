@@ -1,0 +1,20 @@
+{
+	"name": "Identify performance issues",
+	"properties": {
+		"folder": {
+			"name": "Lab10/Optimizing"
+		},
+		"content": {
+			"query": "SELECT  \n    COUNT_BIG(*)\nFROM\n    [wwi_poc].[Sale]\n\n\nSELECT TOP 1000 * FROM\n(\n    SELECT\n        S.CustomerId\n        ,SUM(S.TotalAmount) as TotalAmount\n    FROM\n        [wwi_poc].[Sale] S\n    GROUP BY\n        S.CustomerId\n) T\nOPTION (LABEL = 'Lab: Heap')\n\n\nEXPLAIN WITH_RECOMMENDATIONS\nSELECT TOP 1000 * FROM\n(\n    SELECT\n        S.CustomerId\n        ,SUM(S.TotalAmount) as TotalAmount\n    FROM\n        [wwi_poc].[Sale] S\n    GROUP BY\n        S.CustomerId\n) T\n\n\nSELECT  \n    *\nFROM    \n    sys.dm_pdw_exec_requests\nWHERE   \n    [label] = 'Lab: Heap'\n\n\nSELECT\n   *\nFROM\n    sys.dm_pdw_request_steps\nWHERE\n    request_id = 'QID2284'\nORDER BY\n   step_index\n\n\nSELECT\n*\nFROM\n    sys.dm_pdw_sql_requests\nWHERE\n    request_id = 'QID2284'\n    AND step_index = 2\n\n\nSELECT\n    *\nFROM\n    sys.dm_pdw_dms_workers\nWHERE\n    request_id = 'QID5418'\n    AND step_index = 2\nORDER BY\n    distribution_id\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SQLPool01",
+				"poolName": "SQLPool01"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

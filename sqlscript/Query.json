@@ -1,0 +1,20 @@
+{
+	"name": "Query",
+	"properties": {
+		"folder": {
+			"name": "Lab07"
+		},
+		"content": {
+			"query": "SELECT *\nFROM wwi_perf.Sale_Heap",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SQLPool01",
+				"poolName": "SQLPool01"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

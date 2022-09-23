@@ -1,0 +1,20 @@
+{
+	"name": "table structure with partitioning",
+	"properties": {
+		"folder": {
+			"name": "Lab10/Optimizing"
+		},
+		"content": {
+			"query": "CREATE TABLE [wwi_perf].[Sale_Partition01]\nWITH\n(\n  DISTRIBUTION = HASH ( [CustomerId] ),\n  CLUSTERED COLUMNSTORE INDEX,\n  PARTITION\n  (\n    [TransactionDateId] RANGE RIGHT FOR VALUES (\n            20190101, 20190201, 20190301, 20190401, 20190501, 20190601, 20190701, 20190801, 20190901, 20191001, 20191101, 20191201)\n  )\n)\nAS\nSELECT\n  *\nFROM\t\n  [wwi_perf].[Sale_Heap]\nOPTION  (LABEL  = 'CTAS : Sale_Partition01')\n\nCREATE TABLE [wwi_perf].[Sale_Partition02]\nWITH\n(\n  DISTRIBUTION = HASH ( [CustomerId] ),\n  CLUSTERED COLUMNSTORE INDEX,\n  PARTITION\n  (\n    [TransactionDateId] RANGE RIGHT FOR VALUES (\n            20190101, 20190401, 20190701, 20191001)\n  )\n)\nAS\nSELECT *\nFROM\n    [wwi_perf].[Sale_Heap]\nOPTION  (LABEL  = 'CTAS : Sale_Partition02')\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SQLPool01",
+				"poolName": "SQLPool01"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

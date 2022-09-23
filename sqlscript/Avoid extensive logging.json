@@ -1,0 +1,20 @@
+{
+	"name": "Avoid extensive logging",
+	"properties": {
+		"folder": {
+			"name": "Lab11"
+		},
+		"content": {
+			"query": "SELECT\n    COUNT_BIG(*) as TransactionItemsCount\nFROM\n    [wwi_perf].[Sale_Hash]\nWHERE\n    CustomerId < 900000\n\n\nCREATE TABLE [wwi_perf].[Sale_Hash_v2]\nWITH\n(\n    DISTRIBUTION = ROUND_ROBIN,\n    HEAP\n)\nAS\nSELECT\n    *\nFROM\n    [wwi_perf].[Sale_Hash]\nWHERE\n    CustomerId >= 900000\n\n\nDELETE\n    [wwi_perf].[Sale_Hash]\nWHERE\n    CustomerId < 900000\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SQLPool01",
+				"poolName": "SQLPool01"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

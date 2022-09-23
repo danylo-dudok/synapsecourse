@@ -1,0 +1,20 @@
+{
+	"name": "OVER clause",
+	"properties": {
+		"folder": {
+			"name": "Lab10/Using window functions"
+		},
+		"content": {
+			"query": "SELECT\n  ROW_NUMBER() OVER(\n      PARTITION BY Region\n      ORDER BY Quantity DESC\n    ) AS \"Row Number\",\n  Product,\n  Quantity,\n  Region\nFROM wwi_security.Sale\nWHERE Quantity <> 0  \nORDER BY Region;\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SQLPool01",
+				"poolName": "SQLPool01"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

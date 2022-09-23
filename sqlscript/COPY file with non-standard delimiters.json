@@ -1,0 +1,20 @@
+{
+	"name": "COPY file with non-standard delimiters",
+	"properties": {
+		"folder": {
+			"name": "Lab07"
+		},
+		"content": {
+			"query": "CREATE TABLE [wwi_staging].DailySalesCounts\n    (\n        [Date] [int]  NOT NULL,\n        [NorthAmerica] [int]  NOT NULL,\n        [SouthAmerica] [int]  NOT NULL,\n        [Europe] [int]  NOT NULL,\n        [Africa] [int]  NOT NULL,\n        [Asia] [int]  NOT NULL\n    )\nGO\n\n-- Replace <PrimaryStorage> with the workspace default storage account name.\nCOPY INTO wwi_staging.DailySalesCounts\nFROM 'https://asadatalaked228.dfs.core.windows.net/wwi-02/campaign-analytics/dailycounts.txt'\nWITH (\n    FILE_TYPE = 'CSV',\n    FIELDTERMINATOR='.',\n    ROWTERMINATOR=','\n)\nGO\n\nSELECT * FROM [wwi_staging].DailySalesCounts\nORDER BY [Date] DESC\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SQLPool01",
+				"poolName": "SQLPool01"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

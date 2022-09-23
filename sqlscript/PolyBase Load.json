@@ -1,0 +1,20 @@
+{
+	"name": "PolyBase Load",
+	"properties": {
+		"folder": {
+			"name": "Lab07"
+		},
+		"content": {
+			"query": "INSERT INTO [wwi_staging].[SaleHeap]\nSELECT *\nFROM [wwi_external].[Sales]\nGO\n-- takes 27 minutes\n\nSELECT COUNT(1) FROM wwi_staging.SaleHeap(nolock)\nGO\n\nTRUNCATE TABLE wwi_staging.SaleHeap;\nGO\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SQLPool01",
+				"poolName": "SQLPool01"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

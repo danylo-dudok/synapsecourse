@@ -1,0 +1,20 @@
+{
+	"name": "Create and update indexes",
+	"properties": {
+		"folder": {
+			"name": "Lab10/Optimizing"
+		},
+		"content": {
+			"query": "SELECT\n    *\nFROM\n    [wwi_perf].[Sale_Hash]\nWHERE\n    CustomerId = 500000\n-- 3 SECONDS\n\n\nSELECT\n    *\nFROM\n    [wwi_perf].[Sale_Index]\nWHERE\n    CustomerId = 500000\n\n\nSELECT\n    *\nFROM\n    [wwi_perf].[Sale_Hash]\nWHERE\n    CustomerId between 400000 and 400100\n\nSELECT\n    *\nFROM\n    [wwi_perf].[Sale_Index]\nWHERE\n    CustomerId between 400000 and 400100\n\n\nSELECT\n    *\nFROM\n    [wwi_perf].[Sale_Index]\nWHERE\n    CustomerId between 400000 and 400100\n    and StoreId between 2000 and 4000\n\n\nCREATE INDEX Store_Index on wwi_perf.Sale_Index (StoreId)",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SQLPool01",
+				"poolName": "SQLPool01"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

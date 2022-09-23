@@ -1,0 +1,1463 @@
+{
+	"name": "Exploring",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "SparkPool01",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"runAsWorkspaceSystemIdentity": false,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "0864e4d5-0382-4bf9-9d65-bcff3111bd1a"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"7362dfac-a1b1-4ff1-82f0-e3d01a07e2cc": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "822ea5b1-15e1-4a89-a224-db5332f27b3e",
+										"1": "10",
+										"2": "64",
+										"3": 4,
+										"4": "31.280000000000000000",
+										"5": "125.120000000000000000",
+										"6": "20101231",
+										"7": "38.760000000000000000",
+										"8": 7,
+										"9": 55,
+										"10": "2020"
+									},
+									{
+										"0": "822ea5b1-15e1-4a89-a224-db5332f27b3e",
+										"1": "10",
+										"2": "64",
+										"3": 3,
+										"4": "31.280000000000000000",
+										"5": "93.840000000000000000",
+										"6": "20101231",
+										"7": "29.070000000000000000",
+										"8": 7,
+										"9": 55,
+										"10": "2020"
+									},
+									{
+										"0": "822ea5b1-15e1-4a89-a224-db5332f27b3e",
+										"1": "10",
+										"2": "64",
+										"3": 2,
+										"4": "31.280000000000000000",
+										"5": "62.560000000000000000",
+										"6": "20101231",
+										"7": "19.380000000000000000",
+										"8": 7,
+										"9": 55,
+										"10": "2020"
+									},
+									{
+										"0": "822ea5b1-15e1-4a89-a224-db5332f27b3e",
+										"1": "10",
+										"2": "3348",
+										"3": 2,
+										"4": "27.700000000000000000",
+										"5": "55.400000000000000000",
+										"6": "20101231",
+										"7": "14.020000000000000000",
+										"8": 7,
+										"9": 55,
+										"10": "2020"
+									},
+									{
+										"0": "822ea5b1-15e1-4a89-a224-db5332f27b3e",
+										"1": "10",
+										"2": "1470",
+										"3": 1,
+										"4": "29.140000000000000000",
+										"5": "29.140000000000000000",
+										"6": "20101231",
+										"7": "9.170000000000000000",
+										"8": 7,
+										"9": 55,
+										"10": "2020"
+									},
+									{
+										"0": "822ea5b1-15e1-4a89-a224-db5332f27b3e",
+										"1": "10",
+										"2": "1266",
+										"3": 1,
+										"4": "29.650000000000000000",
+										"5": "29.650000000000000000",
+										"6": "20101231",
+										"7": "8.950000000000000000",
+										"8": 7,
+										"9": 55,
+										"10": "2020"
+									},
+									{
+										"0": "822ea5b1-15e1-4a89-a224-db5332f27b3e",
+										"1": "10",
+										"2": "48",
+										"3": 3,
+										"4": "35.550000000000000000",
+										"5": "106.650000000000000000",
+										"6": "20101231",
+										"7": "29.250000000000000000",
+										"8": 7,
+										"9": 55,
+										"10": "2020"
+									},
+									{
+										"0": "822ea5b1-15e1-4a89-a224-db5332f27b3e",
+										"1": "10",
+										"2": "132",
+										"3": 3,
+										"4": "34.180000000000000000",
+										"5": "102.540000000000000000",
+										"6": "20101231",
+										"7": "24.720000000000000000",
+										"8": 7,
+										"9": 55,
+										"10": "2020"
+									},
+									{
+										"0": "822ea5b1-15e1-4a89-a224-db5332f27b3e",
+										"1": "10",
+										"2": "69",
+										"3": 3,
+										"4": "31.060000000000000000",
+										"5": "93.180000000000000000",
+										"6": "20101231",
+										"7": "30.210000000000000000",
+										"8": 7,
+										"9": 55,
+										"10": "2020"
+									},
+									{
+										"0": "822ea5b1-15e1-4a89-a224-db5332f27b3e",
+										"1": "10",
+										"2": "203",
+										"3": 3,
+										"4": "31.690000000000000000",
+										"5": "95.070000000000000000",
+										"6": "20101231",
+										"7": "28.050000000000000000",
+										"8": 7,
+										"9": 55,
+										"10": "2020"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "TransactionId",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "CustomerId",
+										"type": "int"
+									},
+									{
+										"key": "2",
+										"name": "ProductId",
+										"type": "smallint"
+									},
+									{
+										"key": "3",
+										"name": "Quantity",
+										"type": "tinyint"
+									},
+									{
+										"key": "4",
+										"name": "Price",
+										"type": "decimal"
+									},
+									{
+										"key": "5",
+										"name": "TotalAmount",
+										"type": "decimal"
+									},
+									{
+										"key": "6",
+										"name": "TransactionDate",
+										"type": "int"
+									},
+									{
+										"key": "7",
+										"name": "ProfitAmount",
+										"type": "decimal"
+									},
+									{
+										"key": "8",
+										"name": "Hour",
+										"type": "tinyint"
+									},
+									{
+										"key": "9",
+										"name": "Minute",
+										"type": "tinyint"
+									},
+									{
+										"key": "10",
+										"name": "StoreId",
+										"type": "smallint"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"2"
+									],
+									"seriesFieldKeys": [
+										"5"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"3fe5557d-6176-44db-a641-87a56fd84c21": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "20101231",
+										"1": "176",
+										"2": "26901.350000000000000000",
+										"3": "2.4596",
+										"4": "3805"
+									},
+									{
+										"0": "20101231",
+										"1": "2299",
+										"2": "9720.480000000000000000",
+										"3": "2.4811",
+										"4": "1052"
+									},
+									{
+										"0": "20101231",
+										"1": "2833",
+										"2": "8849.630000000000000000",
+										"3": "2.3937",
+										"4": "991"
+									},
+									{
+										"0": "20101231",
+										"1": "498",
+										"2": "8399.760000000000000000",
+										"3": "2.5601",
+										"4": "1129"
+									},
+									{
+										"0": "20101231",
+										"1": "535",
+										"2": "6869.520000000000000000",
+										"3": "2.5463",
+										"4": "1044"
+									},
+									{
+										"0": "20101231",
+										"1": "1980",
+										"2": "9046.380000000000000000",
+										"3": "2.5493",
+										"4": "1086"
+									},
+									{
+										"0": "20101231",
+										"1": "3684",
+										"2": "1791.680000000000000000",
+										"3": "2.4789",
+										"4": "176"
+									},
+									{
+										"0": "20101231",
+										"1": "1839",
+										"2": "2033.600000000000000000",
+										"3": "2.4405",
+										"4": "205"
+									},
+									{
+										"0": "20101231",
+										"1": "4042",
+										"2": "2236.140000000000000000",
+										"3": "2.6579",
+										"4": "202"
+									},
+									{
+										"0": "20101231",
+										"1": "739",
+										"2": "1618.050000000000000000",
+										"3": "2.7288",
+										"4": "161"
+									},
+									{
+										"0": "20101231",
+										"1": "2219",
+										"2": "7967.710000000000000000",
+										"3": "2.4761",
+										"4": "1087"
+									},
+									{
+										"0": "20101231",
+										"1": "1913",
+										"2": "1503.600000000000000000",
+										"3": "2.4189",
+										"4": "179"
+									},
+									{
+										"0": "20101231",
+										"1": "2554",
+										"2": "1862.000000000000000000",
+										"3": "2.4306",
+										"4": "175"
+									},
+									{
+										"0": "20101231",
+										"1": "2606",
+										"2": "2245.320000000000000000",
+										"3": "2.4316",
+										"4": "231"
+									},
+									{
+										"0": "20101231",
+										"1": "4280",
+										"2": "991.040000000000000000",
+										"3": "2.3385",
+										"4": "152"
+									},
+									{
+										"0": "20101231",
+										"1": "4095",
+										"2": "2040.170000000000000000",
+										"3": "2.4933",
+										"4": "187"
+									},
+									{
+										"0": "20101231",
+										"1": "368",
+										"2": "1588.390000000000000000",
+										"3": "2.443",
+										"4": "193"
+									},
+									{
+										"0": "20101231",
+										"1": "1752",
+										"2": "1992.900000000000000000",
+										"3": "2.4886",
+										"4": "219"
+									},
+									{
+										"0": "20101231",
+										"1": "4504",
+										"2": "1523.340000000000000000",
+										"3": "2.6377",
+										"4": "182"
+									},
+									{
+										"0": "20101231",
+										"1": "1298",
+										"2": "1753.760000000000000000",
+										"3": "2.4301",
+										"4": "226"
+									},
+									{
+										"0": "20101231",
+										"1": "3151",
+										"2": "1476.960000000000000000",
+										"3": "2.3816",
+										"4": "181"
+									},
+									{
+										"0": "20101231",
+										"1": "2549",
+										"2": "1359.690000000000000000",
+										"3": "2.473",
+										"4": "183"
+									},
+									{
+										"0": "20101231",
+										"1": "2726",
+										"2": "1785.850000000000000000",
+										"3": "2.527",
+										"4": "187"
+									},
+									{
+										"0": "20101231",
+										"1": "201",
+										"2": "34463.700000000000000000",
+										"3": "2.4617",
+										"4": "3855"
+									},
+									{
+										"0": "20101231",
+										"1": "4612",
+										"2": "910.080000000000000000",
+										"3": "2.2571",
+										"4": "158"
+									},
+									{
+										"0": "20101231",
+										"1": "154",
+										"2": "39414.240000000000000000",
+										"3": "2.5067",
+										"4": "4878"
+									},
+									{
+										"0": "20101231",
+										"1": "1376",
+										"2": "11253.600000000000000000",
+										"3": "2.5234",
+										"4": "1080"
+									},
+									{
+										"0": "20101231",
+										"1": "643",
+										"2": "1336.350000000000000000",
+										"3": "2.493",
+										"4": "177"
+									},
+									{
+										"0": "20101231",
+										"1": "3203",
+										"2": "1467.180000000000000000",
+										"3": "2.4444",
+										"4": "198"
+									},
+									{
+										"0": "20101231",
+										"1": "148",
+										"2": "27110.580000000000000000",
+										"3": "2.4947",
+										"4": "3797"
+									},
+									{
+										"0": "20101231",
+										"1": "4809",
+										"2": "10822.500000000000000000",
+										"3": "2.5602",
+										"4": "1170"
+									},
+									{
+										"0": "20101231",
+										"1": "2766",
+										"2": "1399.460000000000000000",
+										"3": "2.3857",
+										"4": "167"
+									},
+									{
+										"0": "20101231",
+										"1": "1453",
+										"2": "1621.620000000000000000",
+										"3": "2.5313",
+										"4": "162"
+									},
+									{
+										"0": "20101231",
+										"1": "4192",
+										"2": "6586.460000000000000000",
+										"3": "2.3841",
+										"4": "1018"
+									},
+									{
+										"0": "20101231",
+										"1": "1707",
+										"2": "1802.560000000000000000",
+										"3": "2.5294",
+										"4": "172"
+									},
+									{
+										"0": "20101231",
+										"1": "2897",
+										"2": "9108.000000000000000000",
+										"3": "2.4775",
+										"4": "1100"
+									},
+									{
+										"0": "20101231",
+										"1": "2418",
+										"2": "1937.150000000000000000",
+										"3": "2.4157",
+										"4": "215"
+									},
+									{
+										"0": "20101231",
+										"1": "4568",
+										"2": "11002.910000000000000000",
+										"3": "2.4652",
+										"4": "1097"
+									},
+									{
+										"0": "20101231",
+										"1": "4501",
+										"2": "11934.240000000000000000",
+										"3": "2.5179",
+										"4": "1128"
+									},
+									{
+										"0": "20101231",
+										"1": "3361",
+										"2": "1575.200000000000000000",
+										"3": "2.4444",
+										"4": "176"
+									},
+									{
+										"0": "20101231",
+										"1": "2310",
+										"2": "2703.360000000000000000",
+										"3": "2.75",
+										"4": "264"
+									},
+									{
+										"0": "20101231",
+										"1": "1038",
+										"2": "1891.410000000000000000",
+										"3": "2.4512",
+										"4": "201"
+									},
+									{
+										"0": "20101231",
+										"1": "1530",
+										"2": "1786.740000000000000000",
+										"3": "2.425",
+										"4": "194"
+									},
+									{
+										"0": "20101231",
+										"1": "4769",
+										"2": "1041.550000000000000000",
+										"3": "2.5342",
+										"4": "185"
+									},
+									{
+										"0": "20101231",
+										"1": "4260",
+										"2": "2817.180000000000000000",
+										"3": "2.4396",
+										"4": "222"
+									},
+									{
+										"0": "20101231",
+										"1": "4081",
+										"2": "872.040000000000000000",
+										"3": "2.6",
+										"4": "156"
+									},
+									{
+										"0": "20101231",
+										"1": "4106",
+										"2": "1663.440000000000000000",
+										"3": "2.6364",
+										"4": "174"
+									},
+									{
+										"0": "20101231",
+										"1": "1842",
+										"2": "1786.230000000000000000",
+										"3": "2.8228",
+										"4": "223"
+									},
+									{
+										"0": "20101231",
+										"1": "3739",
+										"2": "2059.750000000000000000",
+										"3": "2.5",
+										"4": "175"
+									},
+									{
+										"0": "20101231",
+										"1": "3599",
+										"2": "5907.330000000000000000",
+										"3": "2.4718",
+										"4": "1053"
+									},
+									{
+										"0": "20101231",
+										"1": "3433",
+										"2": "3163.100000000000000000",
+										"3": "2.6404",
+										"4": "235"
+									},
+									{
+										"0": "20101231",
+										"1": "219",
+										"2": "43183.250000000000000000",
+										"3": "2.5212",
+										"4": "4213"
+									},
+									{
+										"0": "20101231",
+										"1": "2686",
+										"2": "6262.420000000000000000",
+										"3": "2.5477",
+										"4": "1042"
+									},
+									{
+										"0": "20101231",
+										"1": "3469",
+										"2": "11691.680000000000000000",
+										"3": "2.3984",
+										"4": "1168"
+									},
+									{
+										"0": "20101231",
+										"1": "3020",
+										"2": "1354.370000000000000000",
+										"3": "2.4559",
+										"4": "167"
+									},
+									{
+										"0": "20101231",
+										"1": "4460",
+										"2": "7059.700000000000000000",
+										"3": "2.4567",
+										"4": "1135"
+									},
+									{
+										"0": "20101231",
+										"1": "877",
+										"2": "1393.920000000000000000",
+										"3": "2.4146",
+										"4": "198"
+									},
+									{
+										"0": "20101231",
+										"1": "671",
+										"2": "6113.880000000000000000",
+										"3": "2.4239",
+										"4": "972"
+									},
+									{
+										"0": "20101231",
+										"1": "4308",
+										"2": "9206.340000000000000000",
+										"3": "2.5332",
+										"4": "1221"
+									},
+									{
+										"0": "20101231",
+										"1": "2155",
+										"2": "1369.060000000000000000",
+										"3": "2.4444",
+										"4": "154"
+									},
+									{
+										"0": "20101231",
+										"1": "4893",
+										"2": "2077.740000000000000000",
+										"3": "2.5867",
+										"4": "194"
+									},
+									{
+										"0": "20101231",
+										"1": "3697",
+										"2": "1145.520000000000000000",
+										"3": "2.3889",
+										"4": "172"
+									},
+									{
+										"0": "20101231",
+										"1": "2898",
+										"2": "1493.620000000000000000",
+										"3": "2.3875",
+										"4": "191"
+									},
+									{
+										"0": "20101231",
+										"1": "3855",
+										"2": "1447.960000000000000000",
+										"3": "2.4091",
+										"4": "212"
+									},
+									{
+										"0": "20101231",
+										"1": "2235",
+										"2": "1838.640000000000000000",
+										"3": "2.5753",
+										"4": "188"
+									},
+									{
+										"0": "20101231",
+										"1": "952",
+										"2": "1565.460000000000000000",
+										"3": "2.6548",
+										"4": "223"
+									},
+									{
+										"0": "20101231",
+										"1": "656",
+										"2": "816.200000000000000000",
+										"3": "2.3692",
+										"4": "154"
+									},
+									{
+										"0": "20101231",
+										"1": "2416",
+										"2": "2017.280000000000000000",
+										"3": "2.5921",
+										"4": "197"
+									},
+									{
+										"0": "20101231",
+										"1": "318",
+										"2": "982.360000000000000000",
+										"3": "2.4118",
+										"4": "164"
+									},
+									{
+										"0": "20101231",
+										"1": "2958",
+										"2": "1283.400000000000000000",
+										"3": "2.4211",
+										"4": "138"
+									},
+									{
+										"0": "20101231",
+										"1": "2426",
+										"2": "1893.570000000000000000",
+										"3": "2.6296",
+										"4": "213"
+									},
+									{
+										"0": "20101231",
+										"1": "1416",
+										"2": "1737.680000000000000000",
+										"3": "2.5375",
+										"4": "203"
+									},
+									{
+										"0": "20101231",
+										"1": "3743",
+										"2": "1375.550000000000000000",
+										"3": "2.4405",
+										"4": "205"
+									},
+									{
+										"0": "20101231",
+										"1": "2522",
+										"2": "1971.970000000000000000",
+										"3": "2.3735",
+										"4": "197"
+									},
+									{
+										"0": "20101231",
+										"1": "4843",
+										"2": "1575.000000000000000000",
+										"3": "2.5",
+										"4": "175"
+									},
+									{
+										"0": "20101231",
+										"1": "1366",
+										"2": "8050.300000000000000000",
+										"3": "2.4505",
+										"4": "1115"
+									},
+									{
+										"0": "20101231",
+										"1": "1750",
+										"2": "9655.520000000000000000",
+										"3": "2.5392",
+										"4": "1036"
+									},
+									{
+										"0": "20101231",
+										"1": "568",
+										"2": "1451.670000000000000000",
+										"3": "2.2714",
+										"4": "159"
+									},
+									{
+										"0": "20101231",
+										"1": "1372",
+										"2": "1634.380000000000000000",
+										"3": "2.3671",
+										"4": "187"
+									},
+									{
+										"0": "20101231",
+										"1": "543",
+										"2": "1256.300000000000000000",
+										"3": "2.6154",
+										"4": "170"
+									},
+									{
+										"0": "20101231",
+										"1": "4359",
+										"2": "1120.560000000000000000",
+										"3": "2.5455",
+										"4": "168"
+									},
+									{
+										"0": "20101231",
+										"1": "2137",
+										"2": "5065.830000000000000000",
+										"3": "2.4849",
+										"4": "1071"
+									},
+									{
+										"0": "20101231",
+										"1": "3703",
+										"2": "2075.800000000000000000",
+										"3": "2.5526",
+										"4": "194"
+									},
+									{
+										"0": "20101231",
+										"1": "769",
+										"2": "2382.060000000000000000",
+										"3": "2.8101",
+										"4": "222"
+									},
+									{
+										"0": "20101231",
+										"1": "4755",
+										"2": "1081.920000000000000000",
+										"3": "2.2273",
+										"4": "147"
+									},
+									{
+										"0": "20101231",
+										"1": "4047",
+										"2": "1096.740000000000000000",
+										"3": "2.3824",
+										"4": "162"
+									},
+									{
+										"0": "20101231",
+										"1": "2665",
+										"2": "1271.700000000000000000",
+										"3": "2.4179",
+										"4": "162"
+									},
+									{
+										"0": "20101231",
+										"1": "551",
+										"2": "1466.160000000000000000",
+										"3": "2.6032",
+										"4": "164"
+									},
+									{
+										"0": "20101231",
+										"1": "676",
+										"2": "1049.400000000000000000",
+										"3": "2.4444",
+										"4": "220"
+									},
+									{
+										"0": "20101231",
+										"1": "684",
+										"2": "1884.870000000000000000",
+										"3": "2.2375",
+										"4": "179"
+									},
+									{
+										"0": "20101231",
+										"1": "3180",
+										"2": "1468.850000000000000000",
+										"3": "2.3387",
+										"4": "145"
+									},
+									{
+										"0": "20101231",
+										"1": "3215",
+										"2": "9999.360000000000000000",
+										"3": "2.56",
+										"4": "1152"
+									},
+									{
+										"0": "20101231",
+										"1": "87",
+										"2": "20229.300000000000000000",
+										"3": "2.436",
+										"4": "4095"
+									},
+									{
+										"0": "20101231",
+										"1": "4487",
+										"2": "1968.600000000000000000",
+										"3": "2.5733",
+										"4": "193"
+									},
+									{
+										"0": "20101231",
+										"1": "2427",
+										"2": "1428.000000000000000000",
+										"3": "2.4878",
+										"4": "204"
+									},
+									{
+										"0": "20101231",
+										"1": "2240",
+										"2": "1071.400000000000000000",
+										"3": "2.5287",
+										"4": "220"
+									},
+									{
+										"0": "20101231",
+										"1": "4294",
+										"2": "1489.250000000000000000",
+										"3": "2.6429",
+										"4": "185"
+									},
+									{
+										"0": "20101231",
+										"1": "2683",
+										"2": "1545.850000000000000000",
+										"3": "2.5595",
+										"4": "215"
+									},
+									{
+										"0": "20101231",
+										"1": "4176",
+										"2": "1480.050000000000000000",
+										"3": "2.407",
+										"4": "207"
+									},
+									{
+										"0": "20101231",
+										"1": "2941",
+										"2": "1840.320000000000000000",
+										"3": "2.4828",
+										"4": "216"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "TransactionDate",
+										"type": "int"
+									},
+									{
+										"key": "1",
+										"name": "ProductId",
+										"type": "smallint"
+									},
+									{
+										"key": "2",
+										"name": "(sum)ProfitAmount",
+										"type": "decimal"
+									},
+									{
+										"key": "3",
+										"name": "(avg)Quantity",
+										"type": "double"
+									},
+									{
+										"key": "4",
+										"name": "(sum)Quantity",
+										"type": "bigint"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"1"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/b617c64a-3f6e-4c20-891e-aeddf74be19e/resourceGroups/data-engineering-synapse-rg/providers/Microsoft.Synapse/workspaces/asaworkspaced228/bigDataPools/SparkPool01",
+				"name": "SparkPool01",
+				"type": "Spark",
+				"endpoint": "https://asaworkspaced228.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/SparkPool01",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net",
+					"authHeader": null
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"microsoft": {
+						"language": "python"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"df = spark.read.load('abfss://wwi-02@asadatalaked228.dfs.core.windows.net/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet', format='parquet')\r\n",
+					"display(df.limit(10))\r\n",
+					"\r\n",
+					"datalake = 'asadatalaked228'"
+				],
+				"attachments": null,
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df.printSchema()"
+				],
+				"attachments": null,
+				"execution_count": 3
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"from pyspark.sql import SparkSession\n",
+					"from pyspark.sql.types import *\n",
+					"from pyspark.sql.functions import *\n",
+					"\n",
+					"profitByDateProduct = (df.groupBy(\"TransactionDate\",\"ProductId\")\n",
+					"    .agg(\n",
+					"        sum(\"ProfitAmount\").alias(\"(sum)ProfitAmount\"),\n",
+					"        round(avg(\"Quantity\"), 4).alias(\"(avg)Quantity\"),\n",
+					"        sum(\"Quantity\").alias(\"(sum)Quantity\"))\n",
+					"    .orderBy(\"TransactionDate\"))\n",
+					"display(profitByDateProduct.limit(100))"
+				],
+				"attachments": null,
+				"execution_count": 4
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df = (spark.read \\\n",
+					"        .option('inferSchema', 'true') \\\n",
+					"        .json('abfss://wwi-02@' + datalake + '.dfs.core.windows.net/online-user-profiles-02/*.json', multiLine=True)\n",
+					"    )\n",
+					"\n",
+					"df.printSchema()"
+				],
+				"attachments": null,
+				"execution_count": 5
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# create a view called user_profiles\n",
+					"df.createOrReplaceTempView(\"user_profiles\")"
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "sparksql"
+					}
+				},
+				"source": [
+					"%%sql\n",
+					"\n",
+					"SELECT * FROM user_profiles LIMIT 10"
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"from pyspark.sql.functions import udf, explode\n",
+					"\n",
+					"flat=df.select('visitorId',explode('topProductPurchases').alias('topProductPurchases_flat'))\n",
+					"flat.show(100)"
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"topPurchases = (flat.select('visitorId','topProductPurchases_flat.productId','topProductPurchases_flat.itemsPurchasedLast12Months')\n",
+					"    .orderBy('visitorId'))\n",
+					"\n",
+					"topPurchases.show(100)"
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# Let's order by the number of items purchased in the last 12 months\n",
+					"sortedTopPurchases = topPurchases.orderBy(\"itemsPurchasedLast12Months\")\n",
+					"\n",
+					"display(sortedTopPurchases.limit(100))"
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"topPurchases.orderBy(\"itemsPurchasedLast12Months desc\")"
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"sortedTopPurchases = (topPurchases\n",
+					"    .orderBy( col(\"itemsPurchasedLast12Months\").desc() ))\n",
+					"\n",
+					"display(sortedTopPurchases.limit(100))"
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"groupedTopPurchases = (sortedTopPurchases.select(\"visitorId\")\n",
+					"    .groupBy(\"visitorId\")\n",
+					"    .agg(count(\"*\").alias(\"total\"))\n",
+					"    .orderBy(\"visitorId\") )\n",
+					"\n",
+					"display(groupedTopPurchases.limit(100))"
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"groupedTopPurchases = (sortedTopPurchases.select(\"visitorId\",\"itemsPurchasedLast12Months\")\n",
+					"    .groupBy(\"visitorId\")\n",
+					"    .agg(sum(\"itemsPurchasedLast12Months\").alias(\"totalItemsPurchased\"))\n",
+					"    .orderBy(\"visitorId\") )\n",
+					"\n",
+					"display(groupedTopPurchases.limit(100))"
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# Create a temporary view for top purchases so we can load from Scala\n",
+					"topPurchases.createOrReplaceTempView(\"top_purchases\")"
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "scala"
+					}
+				},
+				"source": [
+					"%%spark\n",
+					"// Make sure the name of the dedcated SQL pool (SQLPool01 below) matches the name of your SQL pool.\n",
+					"val df = spark.sqlContext.sql(\"select * from top_purchases\")\n",
+					"df.write.sqlanalytics(\"SQLPool01.wwi.TopPurchases\", Constants.INTERNAL)"
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"dfsales = spark.read.load('abfss://wwi-02@' + datalake + '.dfs.core.windows.net/sale-small/Year=2019/Quarter=Q4/Month=12/*/*.parquet', format='parquet')\n",
+					"display(dfsales.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "scala"
+					}
+				},
+				"source": [
+					"%%spark\n",
+					"// Make sure the name of the SQL pool (SQLPool01 below) matches the name of your SQL pool.\n",
+					"val df2 = spark.read.sqlanalytics(\"SQLPool01.wwi.TopPurchases\")\n",
+					"df2.createTempView(\"top_purchases_sql\")\n",
+					"\n",
+					"df2.head(10)"
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"dfTopPurchasesFromSql = sqlContext.table(\"top_purchases_sql\")\n",
+					"\n",
+					"display(dfTopPurchasesFromSql.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"inner_join = dfsales.join(dfTopPurchasesFromSql,\n",
+					"    (dfsales.CustomerId == dfTopPurchasesFromSql.visitorId) & (dfsales.ProductId == dfTopPurchasesFromSql.productId))\n",
+					"\n",
+					"inner_join_agg = (inner_join.select(\"CustomerId\",\"TotalAmount\",\"Quantity\",\"itemsPurchasedLast12Months\",\"top_purchases_sql.productId\")\n",
+					"    .groupBy([\"CustomerId\",\"top_purchases_sql.productId\"])\n",
+					"    .agg(\n",
+					"        sum(\"TotalAmount\").alias(\"TotalAmountDecember\"),\n",
+					"        sum(\"Quantity\").alias(\"TotalQuantityDecember\"),\n",
+					"        sum(\"itemsPurchasedLast12Months\").alias(\"TotalItemsPurchasedLast12Months\"))\n",
+					"    .orderBy(\"CustomerId\") )\n",
+					"\n",
+					"display(inner_join_agg.limit(100))"
+				],
+				"attachments": null,
+				"execution_count": null
+			}
+		]
+	}
+}

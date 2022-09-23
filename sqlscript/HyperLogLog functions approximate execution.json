@@ -1,0 +1,20 @@
+{
+	"name": "HyperLogLog functions approximate execution",
+	"properties": {
+		"folder": {
+			"name": "Lab10/Using window functions"
+		},
+		"content": {
+			"query": "SELECT COUNT(DISTINCT CustomerId) from wwi_poc.Sale\n\n\nSELECT APPROX_COUNT_DISTINCT(CustomerId) from wwi_poc.Sale\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SQLPool01",
+				"poolName": "SQLPool01"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"name": "Load into the clustered columnstore table",
+	"properties": {
+		"folder": {
+			"name": "Lab07"
+		},
+		"content": {
+			"query": "-- Replace SUFFIX with the workspace default storage account name.\nCOPY INTO wwi_staging.Sale\nFROM 'https://asadatalaked228.dfs.core.windows.net/wwi-02/sale-small/Year=2019'\nWITH (\n    FILE_TYPE = 'PARQUET',\n    COMPRESSION = 'SNAPPY'\n)\nGO\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "SQLPool01",
+				"poolName": "SQLPool01"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
